@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Model tester</string>
+    <string name="help_icon"></string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string-array name="model_type">
+        <item>Quanticized</item>
+        <item>Non-Quanticized</item>
+    </string-array>
+    <string-array name="task_type">
+        <item>Classification</item>
+        <item>Object Detection</item>
+    </string-array>
+</resources>
