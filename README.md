@@ -8,6 +8,11 @@ This Android application is used to test Tensorflow/Pytorch graphs. This is a al
 - Open source: Edit/Make changes, use as a starter template No Worries.
 - Open to Contribution just request.
 
+# Screens
+(https://github.com/Anku5hk/Android-Model-Tester/tree/master/screenshots/ss1.png)
+(https://github.com/Anku5hk/Android-Model-Tester/tree/master/screenshots/ss2.png)
+(https://github.com/Anku5hk/Android-Model-Tester/tree/master/screenshots/ss3.png)
+
 # More Features to be added
 - More Image tasks.
 - Maybe Text tasks.
