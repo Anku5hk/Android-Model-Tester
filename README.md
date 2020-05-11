@@ -9,9 +9,9 @@ This Android application is used to test Tensorflow/Pytorch graphs. This is a al
 - Open to Contribution just request.
 
 # Screens
-!(https://github.com/Anku5hk/Android-Model-Tester/tree/master/screenshots/ss1.png)
-!(https://github.com/Anku5hk/Android-Model-Tester/tree/master/screenshots/ss2.png)
-!(https://github.com/Anku5hk/Android-Model-Tester/tree/master/screenshots/ss3.png)
+![example 1](https://github.com/Anku5hk/Android-Model-Tester/tree/master/screenshots/ss1.png)
+![example 2](https://github.com/Anku5hk/Android-Model-Tester/tree/master/screenshots/ss2.png)
+![example 3](https://github.com/Anku5hk/Android-Model-Tester/tree/master/screenshots/ss3.png)
 
 # More Features to be added
 - More Image tasks.
