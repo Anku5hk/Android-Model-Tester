@@ -9,9 +9,10 @@ This Android application is used to test Tensorflow/Pytorch graphs. This is a al
 - Open to Contribution just request.
 
 # Screens
-![1](/screenshots/ss1.PNG)<br/><br/><br/>
-![2](/screenshots/ss2.PNG)<br/><br/><br/>
-![3](/screenshots/ss3.PNG)<br/><br/><br/>
+![1](/screenshots/sss1.PNG)
+![2](/screenshots/sss2.PNG)
+![1](/screenshots/sss3.PNG)
+![3](/screenshots/sss4.PNG)
 
 # More Features to be added
 - More Image tasks.
