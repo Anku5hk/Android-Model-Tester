@@ -14,7 +14,7 @@ This Android application is used to test Tensorflow/Pytorch graphs. This is a al
 2. Save it as .pt for pytorch or .tflite for tensorflow.
 3. Put labels(classes names) into a simple .txt file, no formatting needed only newline for new class. 
    Same for object detection.
-4. Select files through aplication setting.
+4. Select files through application setting.
 5. Select image and press button.
 6. Done.
 
