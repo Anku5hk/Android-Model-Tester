@@ -1,5 +1,5 @@
 # About
-This Android application is used to test Tensorflow/Pytorch graphs. This is a almost all in one kind of application for image related tasks or atleast it will be and soon more tasks will be added gradually. The soul purpose is to test inference graphs on android for variety of tasks fast and easily. Also one can use it to learn how the code works for pytorch and tensorflow. I don't own most code, only made it look simple, it follows official documentation on Tensorflow/Pytorch websites, so feel free to make changes.
+This Android application is used to test inferences of Tensorflow/Pytorch graphs. This is a almost all in one kind of application for image related tasks or atleast it will be and soon more tasks will be added gradually. The soul purpose is to test graphs on android for variety of Computer Vision tasks independent of library. Also one can use it to learn how the code works for pytorch and tensorflow.
 
 # Features
 - Fast inference on android for tensorflow/pytorch graphs.
