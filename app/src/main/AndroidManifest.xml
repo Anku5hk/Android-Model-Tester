@@ -7,6 +7,7 @@
         android:required="true" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -15,8 +16,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Help"></activity>
-        <activity android:name=".PyClassifier" />
+        <activity
+            android:name=".Pytorch.PyClassifierCamera"
+            android:label="@string/title_activity_py_classifier_camera"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Tensorflow.TfClassifierCamera"
+            android:label="@string/title_activity_tf_classifier_camera"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Tensorflow.TfDetectorCamera"
+            android:label="@string/title_activity_tf_detector_camera"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Help" />
+        <activity android:name=".Pytorch.PyClassifier" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,8 +37,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TfClassifier" />
-        <activity android:name=".TfDetector" />
+        <activity android:name=".Tensorflow.TfClassifier" />
+        <activity android:name=".Tensorflow.TfDetector" />
         <activity
             android:name=".Settings"
             android:label="Settings"

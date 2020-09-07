@@ -16,7 +16,8 @@
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:layout_width="30dp"
@@ -26,9 +27,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="25dp"
             android:text="Settings"
-            android:textFontWeight="20dp"
             android:textSize="22dp"
             android:textColor="@android:color/white"
             style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
@@ -36,179 +36,432 @@
     </androidx.appcompat.widget.Toolbar>
 
     <LinearLayout
-        android:id="@+id/linearlayout1"
-        android:layout_width="392dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="10dp"
-        android:orientation="vertical"
+        android:id="@+id/linearlayout0"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mytoolbar">
 
         <TextView
-            android:id="@+id/model_label"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:text="Select Model file"
-            android:layout_marginLeft="10dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select files"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="392dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayout0">
 
         <LinearLayout
-            android:layout_width="420dp"
-            android:layout_height="50dp"
-            android:orientation="horizontal"
-            android:layout_marginLeft="20dp">
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/model_label"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:text="Model file"
+                android:layout_marginStart="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
             <TextView
                 android:id="@+id/model_name_textview"
-                android:layout_width="240dp"
-                android:layout_height="match_parent"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
                 android:text="choose file"
-                android:layout_marginTop="10dp"/>
-
-            <Button
-                android:id="@+id/md_choose"
-                android:layout_width="90dp"
-                android:layout_height="50dp"
-                android:text="browse" />
-
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"/>
         </LinearLayout>
+        <Button
+            android:id="@+id/md_choose"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:text="browse" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearlayout2"
         android:layout_width="408dp"
-        android:layout_height="80dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="2dp"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearlayout1">
 
-        <TextView
-            android:id="@+id/labels_label"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:text="Select Label file"
-            android:layout_marginLeft="10dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:orientation="horizontal"
-            android:layout_marginLeft="20dp">
+          <TextView
+            android:id="@+id/labels_label"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:text="Labels file"
+            android:layout_marginStart="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
             <TextView
                 android:id="@+id/labels_name_textview"
                 android:layout_width="240dp"
                 android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
-                android:text="choose file" />
+                android:text="choose file"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
 
             <Button
                 android:id="@+id/lb_choose"
                 android:layout_width="90dp"
                 android:layout_height="50dp"
                 android:text="browse" />
-        </LinearLayout>
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout04"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginStart="3dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Options"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"/>
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearlayout4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/linearlayout2">
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayout04">
+
+        <LinearLayout
+            android:id="@+id/linearlayout41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/task_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:height="25dp"
+                android:text="Task "
+                android:layout_marginStart="15dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <Spinner
+                android:id="@+id/select_task_type"
+                android:layout_width="180dp"
+                android:layout_height="25dp"
+                android:entries="@array/task_type"
+                android:spinnerMode="dropdown"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <TextView
-            android:id="@+id/task_type"
-            android:layout_width="match_parent"
+            android:id="@+id/Model"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:height="30dp"
-            android:text="Task Type"
-            android:layout_marginLeft="15dp"
+            android:height="25dp"
+            android:text="Model "
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <Spinner
-            android:id="@+id/select_task_type"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:entries="@array/task_type"
+            android:id="@+id/select_model"
+            android:layout_width="180dp"
+            android:layout_height="25dp"
+            android:entries="@array/model"
             android:spinnerMode="dropdown"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="20dp"/>
+            android:layout_marginStart="5dp"/>
 
+    </LinearLayout>
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearlayout6"
         android:layout_width="402dp"
-        android:layout_height="75dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="15dp"
-        android:orientation="vertical"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearlayout4">
 
+    <LinearLayout
+        android:id="@+id/linearlayout61"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:orientation="vertical">
+
         <TextView
             android:id="@+id/model_type_label"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_weight="1"
-            android:text="Model type"
-            android:layout_marginLeft="15dp"
+            android:text="Quantized"
+            android:layout_marginStart="15dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <Spinner
             android:id="@+id/spinner1"
-            android:layout_width="202dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="20dp"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
             android:entries="@array/model_type"
             android:spinnerMode="dropdown" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearlayout62"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Image_size_label"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="Image Size"
+            android:layout_marginStart="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <EditText
+            android:id="@+id/edit_img_size"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:layout_marginStart="10dp" />
+
+    </LinearLayout>
+
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearlayout7"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_height="65dp"
+        android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@+id/linearlayout6">
 
-        <ImageView
-            android:id="@+id/imageview"
-            android:layout_width="250dp"
-            android:layout_height="40dp">
+        <TextView
+            android:id="@+id/Mixed_precision"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Mixed Precision"
+            android:layout_marginStart="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
-        </ImageView>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+         <Spinner
+             android:id="@+id/spinner2"
+             android:layout_width="180dp"
+             android:layout_height="35dp"
+             android:layout_marginStart="20dp"
+             android:entries="@array/mixed_precision"
+             android:spinnerMode="dropdown" />
 
+         <ImageButton
+             android:id="@+id/mixp_help"
+             android:layout_width="20dp"
+             android:layout_height="35dp"
+             android:src="@mipmap/help_button_icon"
+             android:layout_marginStart="20dp" />
+     </LinearLayout></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout08"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginStart="3dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayout7">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Image means/stds"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"/>
     </LinearLayout>
 
 
-    <Button
-        android:id="@+id/save"
+    <LinearLayout
+        android:id="@+id/linearlayout8"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="202dp"
-        android:layout_marginBottom="25dp"
-        android:backgroundTint="@color/colorPrimary"
-        android:textColor="@android:color/white"
-        android:text="Save"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayout08"
+        app:layout_constraintLeft_toLeftOf="parent">
 
-    <Button
-        android:id="@+id/cancel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="17dp"
-        android:layout_marginBottom="25dp"
-        android:backgroundTint="@android:color/background_light"
-        android:text="cancel"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/save" />
+        <LinearLayout
+            android:id="@+id/linearlayout81"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:id="@+id/linearlayout811"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="Img Mean"
+                    android:layout_marginStart="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                <EditText
+                    android:id="@+id/edit_img_mean"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:inputType="number"
+                    android:layout_marginStart="10dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearlayout812"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="Img STD"
+                    android:layout_marginStart="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                <EditText
+                    android:id="@+id/edit_img_std"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout82"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:id="@+id/linearlayout821"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:text="Post Mean"
+                    android:layout_marginStart="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                <EditText
+                    android:id="@+id/edit_post_mean"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearlayout822"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="Post STD"
+                    android:layout_marginStart="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                <EditText
+                    android:id="@+id/edit_post_std"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout10"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="start"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="180dp"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginStart="45dp"
+            android:textColor="@android:color/white"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/background_light"
+            android:text="cancel" />
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

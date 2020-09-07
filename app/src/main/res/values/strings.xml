@@ -5,10 +5,26 @@
     <string name="save">Save</string>
     <string-array name="model_type">
         <item>Quanticized</item>
-        <item>Non-Quanticized</item>
+        <item>Float</item>
+    </string-array>
+    <string-array name="mixed_precision">
+        <item>Off</item>
+        <item>On</item>
     </string-array>
     <string-array name="task_type">
         <item>Classification</item>
         <item>Object Detection</item>
     </string-array>
+    <string-array name="model">
+        <item>Faster-RCNN</item>
+        <item>EfifcientDET</item>
+    </string-array>
+    <string-array name="processor_select">
+        <item>GPU</item>
+        <item>CPU</item>
+        <item>NPU</item>
+    </string-array>
+    <string name="title_activity_tf_detector_camera">TfDetectorCamera</string>
+    <string name="title_activity_tf_classifier_camera">TfClassifierCamera</string>
+    <string name="title_activity_py_classifier_camera">PyClassifierCamera</string>
 </resources>

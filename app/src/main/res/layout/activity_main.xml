@@ -25,14 +25,14 @@
         android:background="@color/design_default_color_secondary_variant"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        app:layout_constraintStart_toStartOf="parent" >
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Model Tester"
             android:textColor="@android:color/white"
-            android:textSize="22dp"
-            android:textFontWeight="20dp"/>
+            android:textSize="22dp"/>
     </androidx.appcompat.widget.Toolbar>
 
     <TextView
