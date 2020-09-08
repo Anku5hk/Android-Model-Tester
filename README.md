@@ -28,10 +28,12 @@ This Android application is used to test inferences of Tensorflow/Pytorch graphs
 - More Image tasks.
 
 # More
-You can compile above code into Android studio or download apk [here](https://drive.google.com/open?id=1qn0yiFxyEcxa4EVHbDeL4mErxkysXgdS)<br/>
+You can compile above code into Android studio or download apk </br>
+[1.0 here](https://drive.google.com/open?id=1qn0yiFxyEcxa4EVHbDeL4mErxkysXgdS),
+[Update 1.1 here](https://drive.google.com/file/d/1V957V0mpPDvXYICy7E6zxMzYLZOlIX6u/view?usp=sharing)</br>
 Classification Models Zoo: <br/>
-(https://github.com/qubvel/classification_models)<br/>
-(https://www.tensorflow.org/lite/guide/hosted_models)<br/>
+Pytorch (https://github.com/qubvel/classification_models)<br/>
+Tensorflow (https://www.tensorflow.org/lite/guide/hosted_models)<br/>
 Object Detection Models Zoo: (https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)
 
 # Uppdate
