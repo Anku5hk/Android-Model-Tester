@@ -1,13 +1,13 @@
 # About
-This Android application is used to test inferences of Tensorflow/Pytorch graphs. This is a almost all in one kind of application for image related tasks or atleast it will be and soon more tasks will be added gradually. The soul purpose is to test graphs on android for variety of Computer Vision tasks independent of library. Also one can use it to learn how the code works for pytorch and tensorflow.
+This Android application is used to test inferences of Tensorflow/Pytorch graphs. This application supports variety of Models, Computer Vision tasks independent of library. Also one can use it to learn how the code works for pytorch and tensorflow. Soon more tasks will be added gradually.
 
 # Features
 - Fast inference on android for tensorflow/pytorch graphs.
 - Supports Classification, Object Detection.
+- Simple GUI based options for inputs.
 - Auto detect library(Tensorflow/Pytorch).
 - Small size and easy to understand code(Tons of comments).
 - Open source: Edit/Make changes, use as a starter template No Worries.
-- Open to Contribution just request.
 
 # How To?
 1. Train your model.
@@ -24,11 +24,8 @@ This Android application is used to test inferences of Tensorflow/Pytorch graphs
 ![2](/screenshots/sss2.PNG)
 ![1](/screenshots/sss3.PNG)
 
-# More Features to be added(Maybe)
+# More Features to be added.
 - More Image tasks.
-- Multi Output classification.
-- Maybe Text tasks.
-- Use of Multi Thread.
 
 # More
 You can compile above code into Android studio or download apk [here](https://drive.google.com/open?id=1qn0yiFxyEcxa4EVHbDeL4mErxkysXgdS)<br/>
@@ -36,6 +33,8 @@ Classification Models Zoo: <br/>
 (https://github.com/qubvel/classification_models)<br/>
 Object Detection Models Zoo: (https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)
 
-# Contribute
- Yes you can request to make changes and i will appreciate the help.
- Many Thanks..
+# Uppdate
+- Changed code to completely follow the official documentations.
+- Added support for camerax.
+- Tensorflow runs on 0.0.0-nightly version.
+- Supports Quant/Float models on Tensorflow.
