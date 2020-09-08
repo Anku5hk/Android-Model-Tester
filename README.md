@@ -3,7 +3,7 @@ This Android application is used to test inferences of Tensorflow/Pytorch graphs
 
 # Features
 - Fast inference on android for tensorflow/pytorch graphs.
-- Supports Classification, Object Detection.
+- Supports Classification, Object Detection(Faster R-CNN).
 - Simple GUI based options for inputs.
 - Auto detect library(Tensorflow/Pytorch).
 - Small size and easy to understand code(Tons of comments).
