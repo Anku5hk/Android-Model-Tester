@@ -36,7 +36,7 @@ Pytorch (https://github.com/qubvel/classification_models)<br/>
 Tensorflow (https://www.tensorflow.org/lite/guide/hosted_models)<br/>
 Object Detection Models Zoo: (https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)
 
-# Uppdate
+# Update
 - Changed code to completely follow the official documentations.
 - Added support for camerax.
 - Tensorflow runs on 0.0.0-nightly version.
